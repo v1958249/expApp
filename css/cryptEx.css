@@ -1,0 +1,78 @@
+/* 全体のスタイルをリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ヘッダーとメニューのスタイリング */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    font-size:large;
+    text-align: center;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul.menu li a:hover {
+    background-color: #555;
+}
+
+/* サブメニューのスタイリング */
+nav ul.menu li.submenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul.menu li.submenu ul li {
+    width: 150px;
+}
+
+nav ul.menu li.submenu ul li a {
+    padding: 10px 15px;
+    color: white;
+}
+
+nav ul.menu li.submenu ul li a:hover {
+    background-color: #555;
+}
+
+/* ホバーでサブメニュー表示 */
+nav ul.menu li.submenu:hover ul {
+    display: block;
+}
+
+div {
+    padding: 20px;
+}
+
+div p{
+    font-size: large;
+}
