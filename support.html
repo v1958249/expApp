@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/support-src.js"></script>
+<link rel="stylesheet" href="css/support-style.css" media="screen and (min-width: 770px)">
+<link rel="icon" href="content/favicon.png">
+<title>マイクロソフトセキュリティ</title>
+</head>
+<body>
+<wa id="container"></wa>
+
+<div class="scan-box">
+    <bar>
+        <ti>　⚠microsoftセキュリティ</ti>
+        <ca><min>ー</min>×</ca>
+    </bar>
+    <h1 id="box-title">セキュリティスキャン</h1>
+    <div id="progressContainer">
+        <div id="progressBar"></div>
+    </div>
+    <div id="percentage">0%</div>
+    <div id="statusMessage"></div>
+    <div id="count"></div>
+</div>
+
+<footer>
+    <div class="foot1">
+        <img class="bg" src="content/ms.png"><span>Microsoft</span>
+        <p>お客様サポート：TEL 0000-1111-2222</p>
+    </div>
+    <div class="foot2">
+        © microsoft corp. All rights reserved.
+    </div>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <img class="xmg" src="content/x.png">
+        <p>警告！</p>
+        <span>
+            <p>お使いのPCは悪意のあるマルウェアに感染しています。</p>
+            <p>安全のため、現在PCにセキュリティロックを施しています。<br>安全が確認されるまで画面を消さないでください。</p>
+            <p>以下の情報が危険にさらされています。<br>・デバイスのアカウント情報<br>・PCのファイルデータ<br>・クレジットカード情報<br>・住所　電話番号</p>
+            <p>直ちに下記の電話番号にお電話して解決してください。<br>TEL　0000-1111-2222</p>
+        </span>
+        <button>クイックサポート</button> <button>閉じる</button>
+    </div>
+</div>
+
+<div id="ad-box" class="ad-box">
+    <bar>
+        <img class="logo" src="content/mcafee-logo.png">
+        <ca><min>ー</min>×</ca>
+    </bar>
+    <div>お使いのセキュリティソフトの有効期限が切れています。<br>今すぐお得に更新しましょう。</div>
+    <p>すぐに更新してウィルスを排除してください。<br>PCを保護していない場合、マルウェアの脅威にさらされる危険性があります。<br>　</p>
+    <img class="mac" src="content/mcafee.png">
+    <p>　　今更新すると45%引きの特別オファー！</p>
+    <button>今すぐ更新する</button>
+    <co id="ad-count"></co>
+</div>
+
+<div id="box" class="answer-box">
+    <div class="answer-content">
+        <h2>サポート詐欺の対処法　解説</h2>
+        <p> ● 画面上で勝手に始まる見覚えのないウィルススキャンはほとんど偽物です。</p>
+        <p>　出てきても焦らず無視しましょう。</p>       
+        <p> ● 画面をクリックすることで全画面表示になることがほとんどです。</p>
+        <p>　むやみに操作せず画面右上の<span class="hover-text">✖ボタン</span>でブラウザを閉じましょう。</p>
+        <video class="hover-video" src="content/close.mp4" muted loop></video> 
+        <p> ● もし全画面表示になってしまった時はキーボード左上の<span1 href="#">Escキー</span1>を長押しして解除してください。</p>
+        <p>　解除後は同じく✖ボタンでブラウザを閉じましょう。</p>
+        <p> ● 対処法を覚えたら解説を閉じて実際にやってみてください。</p>
+        <p> ● ボタンやキーの場所がわからない場合は下線部にマウスを重ねてください。</p>
+        <p> ● 対処法を詳しく見たい方は、下のリンクをクリックして動画を視聴してください。</p>
+        <p>➡<a href="" onclick="window.open('https://www.youtube.com/watch?v=kUUhjFkN3vM','','');">【ニセ警告詐欺（サポート詐欺）】ウイルス感染？　警告画面はあわてず閉じる！</a></p>
+        <p>注意‼　クリックすると強制的に全画面になります。必ず対処法を覚えてから閉じてください。</p><button id="closeBox">解説を閉じる</button>
+    </div>
+</div>
+
+<div id="last" class="last-box">
+    <div class="last-content">
+        <p>確認‼</p>
+        <p>対処法を覚えましたか？</p>
+        <p>※「はい」を押すと解説が消えます。</p>
+        <div>
+            <button id="yes">はい</button>
+            <button id="no">いいえ</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

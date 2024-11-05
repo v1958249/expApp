@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワンクリック詐欺体験</title>
+    <link rel="stylesheet" href="css/oneclickEx.css">
+</head>
+<body>
+
+    <header>
+        <h1>ネット詐欺体験アプリ</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="top.html">ホーム</a></li>
+                <li class="submenu">
+                    <a href="#">各種詐欺体験</a>
+                    <ul>
+                        <li><a href="oneclickEx.html">ワンクリック詐欺</a></li>
+                        <li><a href="supportEx.html">サポート詐欺</a></li>
+                        <li><a href="cryptEx.html">ランサムウェア</a></li>
+                    </ul>
+                </li>
+                <li><a href="question.html">利用者アンケート</a></li>
+                <li><a href="contact.html">参考文献・出典</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>ワンクリック詐欺</h1>
+        <h2>ワンクリック詐欺の特徴</h2>
+        <p>ワンクリック詐欺とは、Webサイトや電子メール、SMSなどのメッセージに記載されたURLを一度クリックしただけで、
+            一方的に、サービスへの入会などの契約成立を宣言され、多額の料金の支払いを求められるという詐欺です。
+            フィッシング詐欺が情報をだまし取るのに対し、不安を煽るなどして直接金銭を支払わせようとするものがワンクリック詐欺です。<br>　</p>
+        <h2>ワンクリック詐欺の原因</h2>
+        <p>ワンクリック詐欺に遭遇する原因は主に怪しいメールのURLへのアクセスや、怪しい登録サイトへのアクセスです。<br>　</p>
+        <h2>ワンクリック詐欺の体験</h2>
+        <p>ワンクリック詐欺がどういったものか知ったところで、実際にどういった表現や手口を使用するのか体験してみましょう。<br>
+        終了する際はは実際の遭遇時と同じようにブラウザを閉じてください。<br>　</p>
+        <button id="runButton">ワンクリック詐欺を体験する</button>
+    </div>
+</body>
+<script>
+    document.getElementById("runButton").addEventListener("click", function() {
+        // ここでリンク先のURLを指定する
+        var destination = "oneclick.html";
+        // リダイレクト
+        window.open(destination,  null, 'top=0,left=0,width=3500,height=2000');       
+    });
+</script>
+</html>

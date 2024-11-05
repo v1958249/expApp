@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mihoudai.web 登録完了</title>
+<link rel="stylesheet" href="css/register-style.css" media="screen and (min-width: 770px)">
+<link rel="icon" href="content/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head1">
+                <h3><a href="register.html">MIHOUDAI.WEB</a></h3>
+            </div>
+            <nav class="head2">
+                <li><a href="register.html">トップ　</a></li>
+                <li><a href="register.html">　お問い合わせ</a></li>            
+            </nav>
+        </div>
+    </header>
+
+    <div class="fuchi"><h2>会員登録ありがとうございます。</h2></div>
+    <div class="fuchi"><p>会員登録が完了しました。</p></div>
+    <div class="fuchi"><p>お客様情報は以下の通りです</p></div>
+    <table class="table">
+        <tr>
+            <td>登録日時</td>
+            <td id="day"></td>
+        </tr>
+        <tr>
+            <td>ご請求額</td>
+            <td>50,000円</td>
+        </tr>
+        <tr>
+            <td>端末情報</td>
+            <td id="info"></td>
+        </tr>
+        <tr>
+            <td>ブラウザ情報</td>
+            <td id="browser"></td>
+        </tr>
+    </table>
+    <div class="fuchi"><p>⚠ その他のお客様の個人情報も取得しております。</p></div>
+    <div class="fuchi"><p>⚠ 期限までのお支払いが確認できない場合、直接お伺いするか法的措置を取らせていただきます。</p></div>
+    <div class="fuchi"><p>現在お支払いが確認できておりません。クレジットカードの登録をお願いします。</p></div>    
+    <button id="register-btn">クレジットカード登録</button>
+    <div id="count" class="fuchi"></div>
+    <div class="fuchi"><p>退会などのお問い合わせは下記の電話番号にお願いします。</p></div>
+    <div>
+        <div class="fuchi"><h2><a herf="#" class="modalOpen" id="alertModal">TEL 050-1234-5678</a></h2></div>
+    </div>
+    <div class="fuchi"><p>メールでのお問い合わせも受け付けております。下記のメールアドレスにお気軽にお問い合わせください。</p></div>
+    <div>
+        <div class="fuchi"><p><a herf="#" class="modalOpen" id="alertModal">Email : mihoudai-sagi.co.jp</a></p></div>
+    </div>
+
+    <footer>
+        <div class="foot1">
+            <h2>Mihoudai ㈱</h2>
+            <p>〒000‐1111　大分県大分市旦野原XXXX</p><a href="https://lms.app.oita-u.ac.jp/">https://lms.app.oita-u.ac.jp/</a>
+        </div>
+        <div class="foot2">
+            © Mihoudai corp. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="exModal1" class="modal">
+        <div class="modal-content">
+            <p>解説</p>
+            <p>表示される電話番号に電話してはいけません!</p>
+            <p>わからないときは詳しい人か警察に相談しましょう</p>
+            <button id="closeModal">OK</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>情報を入力してください。</p>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="number">16桁のカード番号:</label>
+                    <input type="text" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">姓名:</label>
+                    <input type="text" id="username" name="username" required>
+                    <p>例：KAIIN TAROU</p>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                    <label for="month">有効期限:</label>
+                    <input type="month" id="month" name="month" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">セキュリティコード:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">登録</button>
+            </form>
+            <button id="closemyModal">閉じる</button>
+        </div>
+    </div>
+
+    <div id="exModal2" class="modal">
+        <div class="modal-content">
+            <p>解説</p>
+            <p>クレジットカードの情報が盗まれてしまいました…。</p>
+            <p>個人情報は絶対に入力してはいけません!</p>
+            <button id= "closeExModal">OK</button>
+        </div>
+    </div>
+</body>
+<script src="js/register-src.js"></script>
+</html>

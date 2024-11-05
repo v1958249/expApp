@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート詐欺体験TOP</title>
+    <link rel="icon" href="content/favicon.png">
+    <link rel="stylesheet" href="css/supportEx.css">
+</head>
+<body>
+
+    <header>
+        <h1>ネット詐欺体験アプリ</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="top.html">ホーム</a></li>
+                <li class="submenu">
+                    <a href="#">各種詐欺体験</a>
+                    <ul>
+                        <li><a href="oneclickEx.html">ワンクリック詐欺</a></li>
+                        <li><a href="supportEx.html">サポート詐欺</a></li>
+                        <li><a href="cryptEx.html">ランサムウェア</a></li>
+                    </ul>
+                </li>
+                <li><a href="question.html">利用者アンケート</a></li>
+                <li><a href="contact.html">参考文献・出典</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>サポート詐欺</h1>
+        <h2>サポート詐欺の特徴</h2>
+        <p>「ウイルスが見つかりました」などの偽の警告メッセージを表示し、偽セキュリティソフトを買わせたり、ウイルス駆除費用を請求する手口です。
+            スマホやパソコンの基本システム（OS）からのメッセージをよそおったケース、ブラウザそのものをよそおったケースなど巧妙化が進んでいます。
+            購入費用としてお金が騙しとられたり、個人情報が犯罪者にわたるリスクが存在します。<br>
+            加えて現在、悪意のあるアプリをWeb上でダウンロードされてそのアプリで偽警告画面を表示するという新しい手口のサポート詐欺が確認されています。
+            従来のものよりも危険性が高いとされ、IPAが注意を呼びかけています。<br>　</p>
+        <h2>サポート詐欺の原因</h2>
+        <p>サポート詐欺に遭遇する原因は主にサイト上の偽広告のクリックや、偽サイトへのアクセスです。<br>　</p>
+        <h2>サポート詐欺の体験</h2>
+        <p>サポート詐欺がどういったものか知ったところで、実際にどういった表現や手口を使用するのか体験してみましょう。<br>
+        終了する際はは実際の遭遇時と同じようにブラウザを閉じてください。<br>　</p>
+        <button id="runButton">従来のサポート詐欺を体験する</button>
+        
+        <button id="runButton2">新サポート詐欺を体験する</button>
+    </div>
+</body>
+<script>
+    document.getElementById("runButton").addEventListener("click", function() {
+        // ここでリンク先のURLを指定する
+        var destination = "news.html";
+        // リダイレクト
+        window.open(destination,  null, 'top=0,left=0,width=3500,height=2000');       
+    });
+    document.getElementById('runButton2').addEventListener('click', () => {
+        fetch('/runCode', { method: 'POST' })
+            .then(response => response.text())
+            .then(result => {
+                console.log(result);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>
+</html>
